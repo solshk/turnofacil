@@ -10,9 +10,9 @@ function Inicio() {
             <nav>
                 <img src="./img/favicon/android-chrome-192x192.png" alt="" />
                 <ul>
-                    <li>Demo</li>
-                    <li>Precios</li>
-                    <li>Login</li>
+                    <li><a href="#demo">Demo</a></li>
+                    <li><a href="#demo">Precios</a></li>
+                    <li><a href="#registro">Login</a></li>
                 </ul>
             </nav>
 
@@ -24,7 +24,7 @@ function Inicio() {
                 <h2>El único sistema de gestión de agenda que necesitas</h2>
             </div>
 
-            <div class="demo-img">
+            <div class="demo-img" id='demo'>
                 <div>
                     <img src="./img/favicon/android-chrome-192x192.png" alt="" />
                 </div>
@@ -49,20 +49,20 @@ function Inicio() {
                 <div className="card"></div>
             </div>
 
-            <div class="registro">
-                <h3>Registrate para tener tu cuenta en Rapiturno</h3>
-                <form action="">
-                    <input type="email" id="email" name="email" placeholder='Ingresá tu email'/>
-                </form>
-                <button type="submit" className='btn-verde'>Registrate</button>
+            <div class="registro" id='registro'>
+                <div className="registro-container">
+                    <h3>Registrate para tener tu cuenta en Rapiturno</h3>
+                    <form action="">
+                        <input type="email" id="email" name="email" placeholder='Ingresá tu email'/>
+                    </form>
+                    <button type="submit" className='btn-verde'>Registrate</button>
 
-                <p>-- o --</p>
-                
-                <button type="button" className='btn-azul'>Registrate con Google</button>
-                
-                <a href=""><p>Iniciar sesión</p></a>
-
-                  
+                    <p>-- o --</p>
+                    
+                    <button type="button" className='btn-azul'>Registrate con Google</button>
+                    
+                    <a href="#registro"><p>Iniciar sesión</p></a>
+                </div>                  
             </div>
 
             <footer>

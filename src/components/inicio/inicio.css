@@ -71,6 +71,7 @@ nav ul{
     justify-content: center;
     align-items: center;
     border-radius: 30px;
+    padding: 3rem;
 }
 
 .demo-text1 {
@@ -118,20 +119,24 @@ nav ul{
 
 .registro {
     grid-area: registro;
+    padding: 4rem 6rem 4rem 6rem;
+}
+.registro-container {
     background-color: #3D3E58;
     min-height: 70vh;
     display: flex;
     flex-direction: column;
     align-items: center;
     color: white;
-    padding: 4rem 6rem 4rem 6rem;
+    border-radius: 30px;
+    padding: 3rem 2rem 3rem 2rem;
 }
-.registro h3{
+.registro-container h3{
     font-size: 2.5rem;
     font-weight: 300;
     margin-bottom: 3rem;
 }
-.registro form{
+.registro-container form{
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -139,19 +144,21 @@ nav ul{
     font-size: 1.2rem;
     margin-bottom: 2rem;
 }
-.registro form input{
+.registro-container form input{
     width: 60%;
     font-size: 1.2rem;
+    font-family: inherit;
     border: none;
     border-radius: 15px;
     padding: 1rem;
 }
-.registro button{
+.registro-container button{
     width: 60%;
     margin-bottom: 2.5rem;
     font-size: 1.2rem;
+    font-family: inherit;
 }
-.registro a:hover {
+.registro-container a:hover {
     color: #B8F273;
 }
 
