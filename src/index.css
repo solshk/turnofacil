@@ -17,3 +17,36 @@ a{
   text-decoration: none;
   color: inherit;
 }
+
+.btn-verde {
+  padding: 1rem;
+  background-color: #B8F273;
+  color: #3D3E58;
+  border: none;
+  border-radius: 15px;
+}
+
+.btn-verde:hover {
+  background-color: #a8db6a;
+}
+
+.btn-azul {
+  padding: 1rem;
+  background-color: #3D3E58;
+  color: white;
+  border: solid 1px white;
+  border-radius: 15px;
+}
+
+.btn-azul:hover {
+  border: solid 1px #B8F273;
+  color: #B8F273;
+}
+
+.btn-blanco {
+  padding: 1rem;
+  background-color: white;
+  color: #3D3E58;
+  border: solid 1px #3D3E58;
+  border-radius: 15px;
+}

@@ -1,12 +1,13 @@
 main{
     display: grid;
     grid-template-columns: repeat(7, 1fr);
-    grid-template-rows: 0.3fr auto auto auto auto auto 0.8fr;
+    grid-template-rows: 0.3fr auto auto auto auto auto auto 0.8fr;
     gap: 0px 0px;
     grid-auto-flow: row;
     grid-template-areas:
         "navbar navbar navbar navbar navbar navbar navbar"
         "name name name catchphrase catchphrase catchphrase catchphrase"
+        "reg-action reg-action reg-action reg-action reg-action reg-action reg-action"
         "demo-img demo-img demo-img demo-img demo-text1 demo-text1 demo-text1"
         "demo-img demo-img demo-img demo-img demo-text2 demo-text2 demo-text2"
         "reviews reviews reviews reviews reviews reviews reviews"
@@ -57,6 +58,27 @@ nav ul{
     display: flex;
     align-items: center;
     padding: 3rem;
+}
+
+.reg-action{
+    grid-area: reg-action;
+    padding: 4rem 2rem 4rem 6rem;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: center;
+    text-align: center;
+}
+.reg-action button{
+    width: 100%;
+    font-size: 1.2rem;
+    font-family: inherit;
+}
+.reg-action p{
+    margin-top: 1rem;
+}
+.reg-action p a:hover {
+    color: #A99BCF;
 }
 
 .demo-img {
@@ -130,6 +152,7 @@ nav ul{
     color: white;
     border-radius: 30px;
     padding: 3rem 2rem 3rem 2rem;
+    text-align: center;
 }
 .registro-container h3{
     font-size: 2.5rem;
@@ -152,6 +175,9 @@ nav ul{
     border-radius: 15px;
     padding: 1rem;
 }
+.registro-container a{
+    width: 100%;
+}
 .registro-container button{
     width: 60%;
     margin-bottom: 2.5rem;
@@ -160,37 +186,6 @@ nav ul{
 }
 .registro-container a:hover {
     color: #B8F273;
-}
-
-.btn-verde{
-    padding: 1rem;
-    background-color: #B8F273;
-    color:#3D3E58;
-    border: none;
-    border-radius: 15px;
-}
-.btn-verde:hover{
-    background-color: #a8db6a;
-}
-
-.btn-azul {
-    padding: 1rem;
-    background-color: #3D3E58;
-    color: white;
-    border: solid 1px white;
-    border-radius: 15px;
-}
-.btn-azul:hover{
-    border: solid 1px #B8F273;
-    color: #B8F273;
-}
-
-.btn-blanco{
-    padding: 1rem;
-    background-color: white;
-    color: #3D3E58;
-    border: solid 1px #3D3E58;
-    border-radius: 15px;
 }
 
 footer {
