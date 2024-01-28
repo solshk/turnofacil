@@ -1,0 +1,52 @@
+.container {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: 0.3fr 1fr;
+    gap: 0px 0px;
+    grid-template-areas: 
+    "nav nav nav nav nav"
+    "main main main main main";
+    width: 100%;
+    height: auto;
+    min-height: 100vh;
+}
+
+nav {
+    grid-area: nav;
+}
+
+.login-main {
+    grid-area: main;
+    text-align:center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    padding: 3rem 2rem 3rem 2rem;
+}
+.login-main div form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+}
+.login-main div form input {
+    width: 100%;
+    font-size: 1.2rem;
+    font-family: inherit;
+    border: solid 1px #3D3E58;
+    border-radius: 15px;
+    padding: .8rem;
+    margin: 1rem;
+}
+.login-main div form button{
+    font-family: inherit;
+    width: 30%;
+    margin: 1rem;
+}
+
+.login-main div p a:hover {
+    color: #A99BCF;
+}
